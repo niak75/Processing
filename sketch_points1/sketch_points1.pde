@@ -14,8 +14,6 @@ float y;
 Balle[] balles = new Balle[nbreBalle];
 
 void setup() {
-  
-  
   centreX = width/2;
   centreY = height/2;
 
