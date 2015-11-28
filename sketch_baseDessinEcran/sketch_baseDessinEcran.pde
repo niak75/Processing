@@ -1,3 +1,5 @@
+// Une base pour parcourir tous les pixels de l'écran et les colorier
+
 float r=1;
 
 void setup() {
