@@ -12,8 +12,8 @@ class mots{
     y=newY;
     mot=newMot;
     direction=0;
-    vitesseX=(random(10)-5)*2;
-    vitesseY=(random(10)-5)*2;
+    vitesseX=(random(10)-5);
+    vitesseY=(random(10)-5);
     rotation=random(5)-2.5;
   }
   
