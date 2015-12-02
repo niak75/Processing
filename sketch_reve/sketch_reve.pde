@@ -18,7 +18,7 @@ serpent mySerpent1 = new serpent(350, 350, 0, 0, 0, 255);
 serpent mySerpent2 = new serpent(350, 350, 0, 255, 255, 0);
 
 void setup() {
-  size(1280, 760);
+  size(displayWidth, displayHeight);
   background(0);
 }
 
