@@ -7,7 +7,7 @@ float[] positionsPointsAxeY = new float[nbPoints];
 float angle=0;
 
 void setup() {
-  size(1280, 800);
+  size(displayWidth, displayHeight);
   background(0);
   stroke(255);
 }
@@ -15,7 +15,7 @@ void setup() {
 void draw() {
   fill(0,0,0,50);
   rect(-1,-1,width+1,height+1);
-  angle=radians(mouseX);
+  angle=-radians(mouseX/2);
  
   translate(width/2,height/2);
   line(-taille,0,taille,0);
