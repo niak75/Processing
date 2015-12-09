@@ -17,8 +17,6 @@ void draw(){
   triangle(-100,0,100*sin(radians(angle)),100*cos(radians(angle)),-100,(200*-tan(radians(90-((angle-90)/2)))));
   fill(0,0,255);
   triangle(100,0,100*sin(radians(angle)),100*cos(radians(angle)),100,(200*-tan(radians((angle-90)/2))));
-  //triangle(-100,0,100*sin(angle),100*cos(angle),200,200);
-  //triangle(100,0,100*sin(angle),100*cos(angle),200,200);
 }
 
 void mousePressed(){
