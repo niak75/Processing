@@ -41,8 +41,12 @@ float[] coins = new float[700*700*700];
 float coinX;
 float coinY;
 
+AudioPlayer song;
+
 void setup() {
   minim = new Minim(this);
+  
+  song = minim.loadFile("Musique reve.mp3");
   
   size(displayWidth, displayHeight);
   background(0);
@@ -50,6 +54,7 @@ void setup() {
   for (int i = 0; i < nbreBalle; i++) {
     balles[i] = new Balle(); // Création de toutes les balles
   }
+  song.play();
 }
 
 void draw() {
