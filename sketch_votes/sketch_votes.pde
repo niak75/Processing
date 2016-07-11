@@ -1,5 +1,5 @@
-int votesA = 150;
-int votesB = 120;
+int votesA = 15;
+int votesB = 11;
 
 int nombreDeTests=10000;
 
