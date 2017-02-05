@@ -1,4 +1,4 @@
-int nbBalles=30;
+int nbBalles=50;
 double distanceBalles;
 balle[] balles=new balle[nbBalles];
 
@@ -60,14 +60,14 @@ class balle {
   float posX;
   float posY;
   float taille;
-  float couleur;
+  color couleur;
 
   balle(float nouvDirection, float nouvVitesse) {
     mouvement=new Mouvement(nouvDirection, nouvVitesse);
     posX=random(50, width-50);
     posY=random(50, height-50);
     taille=random(30, 100);
-    couleur=255;
+    couleur=color(random(255),random(255),random(255));
   }
 
   void bouge() {
@@ -89,6 +89,7 @@ class balle {
   }
 
   void affiche() {
+    fill(couleur);
     ellipse(posX, posY, taille, taille);
   }
 
